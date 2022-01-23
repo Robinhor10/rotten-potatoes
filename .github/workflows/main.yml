@@ -30,7 +30,7 @@ jobs:
             robinhor10/rotten-potatoes:${{ github.run_number}}
             
   CD:
-    needs:[CI]
+    needs:  [CI]
     runs-on: ubuntu-latest
     
     steps:
